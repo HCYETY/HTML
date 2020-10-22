@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>制作导航条</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            ul{
+                width: 960px;
+                height: 40px;
+                background-color: green;
+                margin: 100px auto;
+            }
+            ul li{
+                list-style: none; /*去掉小圆点*/
+                width: 120px;
+                height: 40px;
+                float: left;
+                background-color: purple;
+                text-align: center; /*水平居中*/
+                line-height: 40px; /*垂直居中*/
+            }
+            ul li a{  /*鼠标触碰边框的时候变颜色*/
+                width: 120px;
+                height: 40px;
+                display: inline-block;
+            }
+            ul li a:link{
+                color: white;
+                text-decoration: none; /*去掉下划线*/
+            }
+            ul li a:hover{
+                color: red;
+                background-color: #ccc;
+            }
+            ul li a:active{
+                color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">我是导航</a></li>
+            <li><a href="#">我是导航</a></li>
+            <li><a href="#">我是导航</a></li>
+            <li><a href="#">我是导航</a></li>
+            <li><a href="#">我是导航</a></li>
+            <li><a href="#">我是导航</a></li>
+            <li><a href="#">我是导航</a></li>
+            <li><a href="#">我是导航</a></li>
+        </ul>
+    </body>
+</html>
