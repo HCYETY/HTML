@@ -65,8 +65,8 @@
         格式：text-align：right；
         取值：left center right
         快捷键：ta + tab键：text-align：left；
-               tar + tab键：text-align：center；
-               tac + tab键：text-align：right；
+               tar + tab键：text-align：right；
+               tac + tab键：text-align：center；
 3、文本缩进的属性：
         格式：text-indent：2em;
         取值：2em,其中em是单位，一个em代表缩进一个文字的宽度       
