@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>购物导航条</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            ul{
+                list-style: none;
+                width: 800px;
+                height: 50px;
+                margin: 0 auto;
+                margin-top: 100px;
+                background-color: skyblue;
+            }
+            ul li{
+                float: left;
+                width: 100px;
+                background-color: #ccc;
+                line-height: 50px;  /*垂直居中*/
+                text-align: center;  /*水平居中*/
+            }
+            ul li.world{
+                background-color: yellow;
+                position: relative;
+            }
+            ul li img{
+                width: 30px;
+                position: absolute;
+                left: 40px;
+                top: -10px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>服装城</li>
+            <li>美妆馆</li>
+            <li>京东超市</li>
+            <li class="world">全球购
+                <img src="hot.jpg">
+            </li>
+            <li>闪购</li>
+            <li>团购</li>
+            <li>拍卖</li>
+            <li>金融</li>
+        </ul>
+    </body>
+</html>
