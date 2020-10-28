@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>透视练习</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			width: 596px;
+			height: 354px;
+			border: 1px solid #000;
+			margin: 100px auto;
+			background-color: skyblue;
+			perspective: 500px;
+		}
+		div img{
+			transform-origin: center bottom;
+			transition: transform 1s;
+		}
+		div:hover img{
+			transform: rotateX(80deg);
+		}
+	</style>
+</head>
+
+<body>
+	<div><img src="汇款单.jpg" alt=""></div>
+</body>
+</html>

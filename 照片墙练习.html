@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>照片墙练习</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			height: 400px;
+			background-color: skyblue;
+			margin-top: 100px;
+			border: 1px solid #000;
+			text-align: center;
+		}
+		li{
+			list-style: none;
+			width: 150px;
+			height: 200px;
+			background-color: red;
+			display: inline-block;  /*方便将li放于中央，若设置为浮动不易控制*/
+			margin-top: 100px;
+			transition: all 1s;
+			position: relative;
+			box-shadow: 0 0 10px;  /*设置阴影*/
+		}
+		ul li:nth-child(1){
+			transform: rotate(30deg);
+		}
+		ul li:nth-child(2){
+			transform: rotate(-40deg);
+		}
+		ul li:nth-child(3){
+			transform: rotate(10deg);
+		}
+		ul li:nth-child(4){
+			transform: rotate(45deg);
+		}
+		img{
+			width: 150px;
+			height: 200px;
+			border: 5px solid white;
+			box-sizing: border-box;
+		}
+		ul li:hover{  /*有疑问*/
+			transform: scale(1.5);  /*缩放时清空前面的transform*/
+			z-index: 998;  /*用于覆盖照片*/
+		}
+	</style>
+</head>
+
+<body>
+	<ul>
+		<li><img src="NJ.jpg"></li>
+		<li><img src="二维码.jpg"></li>
+		<li><img src="html+css.jpg"></li>
+		<li><img src="download.jpg"></li>
+	</ul>
+</body>
+</html>
