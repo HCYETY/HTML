@@ -8,48 +8,60 @@
 			margin: 0;
 			padding: 0;
 		}
+		div{
+			text-align: center;
+		}
 		.header{
 			height: 220px;
-			background-color: mediumvioletred;
-		}
-		.header img{
-			width: 200px;
-            height: 70%;
 			display: flex;
-			flex: 1;
+			flex-direction: column;
+		}
+		img{
+			width: 200px;
+            height: 150px;
+
 		}
 		.content{
 			height: 280px;
-			background-color: pink;
 		}
 		input[type="text"]{
             width: 400px;
             height: 45px;
 			font-size: 16px;
+			margin-top: 20px;
         }
         input[type="submit"]{
             width: 100px;
             height: 45px;
 			color: white;
 			font-size: 16px;
-			background-color: dodgerblue;
+			background-color: cornflowerblue;
         }
 		.content .tuo{
-			margin-top: 50px;
+			margin-top: 20px;
 		}
 		.content .bk{
 			margin-top: 100px;
 		}
 		.footer{
-			height: 200px;
-			background-color: yellow;
+			height: 220px;
+		}
+		.zhuye{
+			margin-bottom: 30px;
+			padding: 30px;
+		}
+		.four{
+			margin-top: 10px;
+		}
+		.weiba{
+			margin-top: 60px;
 		}
 	</style>
 </head>
 
 <body>
 	<div class="header">
-		<div><img src="baidulogo.jpg" alt=""></div>
+		<div><img src="baidulogo.jpg"></div>
 		<div class="links">       
 			<a href="#">新闻</a>
 			<strong>网页</strong>
@@ -76,11 +88,11 @@
 		<div class="bk"><a href="#">百度地图带你吃喝玩乐，全心全意为人民服务</a></div>
 	</div>
 	<div class="footer">
-		<div>
+		<div class="zhuye">
 			<a href="#">把百度设为主页</a>
 			<a href="#">安装百度卫士</a>
 		</div>
-		<div>
+		<div class="four">
 			<a href="#">加入百度推广</a>
 			 |
 			<a href="#">搜索风云榜</a>
@@ -89,7 +101,7 @@
 			 |
 			<a href="#">About Baidu</a>
 		</div>
-		<div>©2020 Baidu (京)-经营性-2017-0020京公网安备11000002000001号京ICP证030173号</div>
+		<div class="weiba">©2020 Baidu (京)-经营性-2017-0020京公网安备11000002000001号京ICP证030173号</div>
 	</div>
 </body>
 </html>
