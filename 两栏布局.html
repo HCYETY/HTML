@@ -1,38 +1,31 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>无标题文档</title>
+	<meta charset="utf-8">
+	<title>两栏布局</title>
 	<style>
-		div .a{
-			width: 600px;
+	 	.box{
+			width: 400px;
 			height: 100px;
-			border: 1px solid #000;
-			box-sizing: border-box;
 			display: flex;
-			flex-flow: row;
 		}
-		div .b{
+		.left{
 			width: 100px;
 			height: 100px;
-			border: 1px solid #000;
 			background-color: skyblue;
-			float: left;
 		}
-		div .c{
+		.right{
 			flex: 1;
 			height: 100px;
-			border: 1px solid #000;
-			background-color: yellow;
-			float: left;
+			background-color: greenyellow;
 		}
 	</style>
 </head>
 
 <body>
-	<div class="a">
-		<div class="b">slider</div>
-		<div class="c">content</div>
+	<div class="box">
+		<div class="left">slider</div>
+		<div class="right">content</div>
 	</div>
 </body>
 </html>
