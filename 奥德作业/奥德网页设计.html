@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>第一个网页</title>
+  <style>
+    *{
+			position: 0;
+			margin: 0;
+      background-color: skyblue;
+		}
+    #header{
+      height: 30px;
+    }
+		#content{
+      height: 250px;
+			margin: 200px auto;
+			text-align: center;
+		}
+		#time{
+			font-size: 200px;
+			color: green;
+		}
+		#pic{
+			display: none;
+			margin: 200px auto;
+			text-align: center;
+		}
+    #footer{
+      height: 100px;
+    }
+    ul{
+      list-style: none;
+      height: 30px;
+    }
+    ul li{
+      color: pink;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="header">
+    <marquee direction="right" height="50"  behavior="scroll" direction="50">
+      <ul>
+        <li>这是HCYETY设计的网页呀!您眼光不错哟~~~</li>
+      </ul>
+    </marquee>
+  </div>
+
+  <div id="content">
+    <div id="time">5</div>
+    <img id="pic" src="flower.gif">
+  </div>
+
+  <div id="footer">
+    <a href="网址连接.html"> <input type="submit" value="更多精彩请点击"> </a>
+  </div>
+
+<script>
+window.onload = function (ev) {
+  var intervalID = setInterval(function () {
+    $('time').innerText -= 1;
+
+    //清除定时器
+    if( $('time').innerText === '0'){
+      clearInterval(intervalID);
+      // 显示和隐藏
+      $('pic').style.display = 'block';
+              $('time').style.display = 'none';
+    }
+  },1000);
+};
+
+function $(id) {
+      return typeof id === 'string' ? document.getElementById(id) : null;
+  }
+</script>
+</body>
+</html>
