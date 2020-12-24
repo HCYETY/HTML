@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  #box{
+    /* position: relative; */
+    width: 600px;
+    height: 600px;
+    background: url("../images/clock.jpg") no-repeat;
+  }
+  #hour, #min, #second{
+    /* position: absolute; */
+    /* left: 50%; */
+    top: 0;
+    width: 30px;
+    height: 600px;
+    /* margin-left: -15px; */
+  }
+  #hour{
+    background: url("../images/hour.png") no-repeat;
+  }
+  #min{
+    background: url("../images/minute.png") no-repeat;
+  }
+  #second{
+    background: url("../images/second.png") no-repeat;
+  }
