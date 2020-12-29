@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#e_coder {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    background: url("../images/e_coder_normal.png") no-repeat;
+    top: 30%;
+    right: 0;
+    cursor: pointer; /*不理解*/
+}
+#e_app {
+    width: 100px;
+    height: 360px;
+    position: absolute;
+    top: -50px;
+    right: 200px;
+    display: none;
+}

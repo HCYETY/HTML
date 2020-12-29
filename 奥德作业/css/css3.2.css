@@ -3,18 +3,21 @@
     padding: 0;
   }
   #box{
-    /* position: relative; */
-    width: 600px;
-    height: 600px;
+    position: relative;
+    width: 250px;
+    height: 250px;
     background: url("../images/clock.jpg") no-repeat;
+    background-size: cover;
   }
   #hour, #min, #second{
-    /* position: absolute; */
+    position: absolute;
     /* left: 50%; */
-    top: 0;
+    /* top: 0; */
     width: 30px;
     height: 600px;
-    /* margin-left: -15px; */
+    margin-left: 115px;
+    margin-top: -170px;
+    background-size: cover;
   }
   #hour{
     background: url("../images/hour.png") no-repeat;

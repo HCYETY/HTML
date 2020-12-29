@@ -1,5 +1,8 @@
 #time{
-    font-size: 20px;
+    font-size: 40px;
     color: rgb(180, 73, 73);
+    width: 350px;
+    height: 200px;
+    /* text-align: center; */
     /* margin: 120px; */
 }

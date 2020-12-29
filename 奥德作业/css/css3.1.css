@@ -1,16 +1,13 @@
 .banner {
   position: relative;
   top: 0;
-  width: 1950px;
   height: 178px;
   overflow: hidden;
 }
-
 .layer {
   position: absolute;
   top: 0;
 }
-
 img {
   width: 1950px;
   height: 178px;
