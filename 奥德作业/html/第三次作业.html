@@ -3,29 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <title>第三次作业</title>
-    <link rel="stylesheet" href="../css/css3.css">
+    <link rel="stylesheet" href="../css/css3.1.css">
+    <link rel="stylesheet" href="../css/css3.2.css">
+    <link rel="stylesheet" href="../css/css3.3.css">
+    <link rel="stylesheet" href="../css/css3.4.css">
+    <link rel="stylesheet" href="../css/css3.5.css">
+    <style>
+        #top{
+            height: 178px;
+        }
+        #bottom{
+            height: 710;
+            position: relative;
+        }
+        #bottomLeft{
+            width: 260px;
+            height: 710;
+            border: 3px solid #ddd;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #bottomLeftTop{
+            border: 4px dashed yellow;
+        }
+        #bottomLeftBottom{
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        #bottomCentent{
+            width:1160px;
+            height: 710;
+            position: absolute;
+            top: 0;
+            left: 260px;
+        }
+        #bottomRight{
+            width: 240;
+            height: 710;
+            border: 3px solid #ddd;
+            position: absolute;
+            top: 0;
+            left: 1220px;
+        }
+        #over{
+            float: left;
+            height: 145px;
+            background-color: skyblue;
+        }
+    </style>
 </head>
 <body>
-    <div class="banner">
-        <div class="layer">
-            <img class="back" src="../images/bilibili-autumn-1.png" alt="">
+    <!-- <div id="body"> -->
+        <div id="top">
+            <!-- 秋季头部 -->
+            <div class="banner">
+                <div class="layer">
+                    <img class="back" src="../images/bilibili-autumn-1.png" alt="">
+                </div>
+                <div class="layer">
+                    <img class="person22" src="../images/bilibili-autumn-2.png" alt="">
+                </div>
+                <div class="layer">
+                    <img class="hill" src="../images/bilibili-autumn-3.png" alt="">
+                </div>
+                <div class="layer">
+                    <img class="leaves" src="../images/bilibili-autumn-4.png" alt="">
+                </div>
+                <div class="layer">
+                    <img class="person33" src="../images/bilibili-autumn-5.png" alt="">
+                </div>
+                <div class="layer">
+                    <img class="left" src="../images/bilibili-autumn-6.png" alt="">
+                </div>
+            </div>
         </div>
-        <div class="layer">
-            <img class="person22" src="../images/bilibili-autumn-2.png" alt="">
+
+        <div id="bottom">
+            <div id="bottomLeft">
+                <div id="bottomLeftTop">
+                    <!-- 时钟 -->
+                    <div id="box">
+                        <div id="hour"></div>
+                        <div id="min"></div>
+                        <div id="second"></div>
+                    </div>
+                </div>
+
+                <div id="bottomLeftBottom">
+                    <!-- 放假倒计时 -->
+                    <div id="time"></div>
+                </div>
+            </div>
+
+            <div id="bottomCentent">
+                <div id="bottomCententTop">
+                    <!-- 选项卡 -->
+                    <div class="whole">
+                        <!-- 头部 -->
+                        <div id="header">
+                            <ul>
+                                <li>动画</li>
+                                <li>番剧</li>
+                                <li>国创</li>
+                                <li>综艺</li>
+                                <li>搞笑</li>
+                                <li>音乐</li>
+                                <li>舞蹈</li>
+                                <li>竞技</li>
+                                <li>游戏</li>
+                            </ul>
+                        </div>
+                        <!-- 内容 -->
+                        <div id="content">
+                            <div class="dom"  style="display: block">
+                                <ul>
+                                    <li> <a href="#">剧透注意啦！进击的巨人最终季宣战开始了</a> </li>
+                                    <li> <a href="#">带好耳机！那些爽到炸裂的宝具多有重量级</a> </li>
+                                    <li> <a href="#">萌系演技作画启蒙者，新一代中最有影响力</a> </li>
+                                    <li> <a href="#">追求自由的脚步永不停歇 为艾伦献出心脏</a> </li>
+                                    <li> <a href="#">这首神曲曾“血洗”全B站，听众全身触电。</a> </li>
+                                    <li> <a href="#">你只看到了我的罪恶，却不知我经历的地狱</a> </li>
+                                    <li> <a href="#"></a> </li>
+                                    <li> <a href="#"></a> </li>
+                                </ul>
+                            </div>
+                            <div class="dom">
+                                <ul>
+                                    <li> <a href="#">鬼灭之刃</a> </li>
+                                    <li> <a href="#">从零开始的异世界生活</a> </li>
+                                    <li> <a href="#">异度入侵</a> </li>
+                                    <li> <a href="#">黑色四叶草</a> </li>
+                                    <li> <a href="#">名侦探柯南</a> </li>
+                                    <li> <a href="#">海贼王</a> </li>
+                                    <li> <a href="#"></a> </li>
+                                    <li> <a href="#"></a> </li>
+                                </ul>
+                            </div>
+                            <div class="dom">
+                                <ul>
+                                    <li> <a href="#">凡人修仙传</a> </li>
+                                    <li> <a href="#">完美世界</a> </li>
+                                    <li> <a href="#">天官赐福</a> </li>
+                                    <li> <a href="#">元龙</a> </li>
+                                    <li> <a href="#">刺客伍六七</a> </li>
+                                    <li> <a href="#">一人之下</a> </li>
+                                    <li> <a href="#"></a> </li>
+                                    <li> <a href="#"></a> </li>
+                                </ul>
+                            </div>
+                            <div class="dom">
+                                <ul>
+                                    <li> <a href="#">奔跑吧兄弟</a> </li>
+                                    <li> <a href="#">奇葩说</a> </li>
+                                    <li> <a href="#">最强大脑</a> </li>
+                                    <li> <a href="#">中国新说唱</a> </li>
+                                    <li> <a href="#">一站到底</a> </li>
+                                    <li> <a href="#">王牌对王牌</a> </li>
+                                    <li> <a href="#"></a> </li>
+                                    <li> <a href="#"></a> </li>
+                                </ul>
+                            </div>
+                            <div class="dom">
+                                <ul>
+                                    <li> <a href="#">王者别闹</a> </li>
+                                    <li> <a href="#">峡谷重案组</a> </li>
+                                    <li> <a href="#">温温表情包</a> </li>
+                                    <li> <a href="#"></a> </li>
+                                    <li> <a href="#"></a> </li>
+                                    <li> <a href="#"></a> </li>
+                                    <li> <a href="#"></a> </li>
+                                    <li> <a href="#"></a> </li>
+                                </ul>
+                            </div>
+                            <div class="dom">
+                                <ul>
+                                    <li> <a href="#">一曲相思</a> </li>
+                                    <li> <a href="#">盗墓笔记</a> </li>
+                                    <li> <a href="#">作曲家</a> </li>
+                                    <li> <a href="#">在一起嘛好不好</a> </li>
+                                    <li> <a href="#">飘向北方</a> </li>
+                                    <li> <a href="#">少年</a> </li>
+                                    <li> <a href="#"></a> </li>
+                                    <li> <a href="#"></a> </li>
+                                </ul>
+                            </div>
+                            <div class="dom">
+                                <ul>
+                                    <li> <a href="#">拉丁舞</a> </li>
+                                    <li> <a href="#">爵士舞</a> </li>
+                                    <li> <a href="#">华尔兹</a> </li>
+                                    <li> <a href="#">民族舞</a> </li>
+                                    <li> <a href="#">功夫舞</a> </li>
+                                    <li> <a href="#">肚皮舞</a> </li>
+                                    <li> <a href="#"></a> </li>
+                                    <li> <a href="#"></a> </li>
+                                </ul>
+                            </div>
+                            <div class="dom">
+                                <ul>
+                                    <li> <a href="#">羽球赛</a> </li>
+                                    <li> <a href="#">MBA</a> </li>
+                                    <li> <a href="#">国乒赛</a> </li>
+                                    <li> <a href="#">网球赛</a> </li>
+                                    <li> <a href="#">足球赛</a> </li>
+                                    <li> <a href="#">女排</a> </li>
+                                    <li> <a href="#"></a> </li>
+                                    <li> <a href="#"></a> </li>
+                                </ul>
+                            </div>
+                            <div class="dom">
+                                <ul>
+                                    <li> <a href="#">元气骑士</a> </li>
+                                    <li> <a href="#">迷你世界</a> </li>
+                                    <li> <a href="#">第五人格</a> </li>
+                                    <li> <a href="#">QQ飞车</a> </li>
+                                    <li> <a href="#">王者荣耀</a> </li>
+                                    <li> <a href="#">猫和老鼠</a> </li>
+                                    <li> <a href="#"></a> </li>
+                                    <li> <a href="#"></a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="bottomCententBottom">
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="bottomRight">
+                <div id="e_coder">
+                    <div id="e_app">
+                        <img src="../images/e_coder.jpg" alt="公众号" width="150">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="layer">
-            <img class="hill" src="../images/bilibili-autumn-3.png" alt="">
-        </div>
-        <div class="layer">
-            <img class="leaves" src="../images/bilibili-autumn-4.png" alt="">
-        </div>
-        <div class="layer">
-            <img class="person33" src="../images/bilibili-autumn-5.png" alt="">
-        </div>
-        <div class="layer">
-            <img class="left" src="../images/bilibili-autumn-6.png" alt="">
-        </div>
-    </div>
-<link rel="stylesheet" href="../js/">
+
+        <div id="over"></div>
+    <!-- </div> -->
+
+    <!-- <script> alert('欢迎来到四羊的网页呀'); </script> -->
+    <script src="../js/js3.1.js"></script>
+    <script src="../js/js3.2.js"></script>
+    <script src="../js/js3.3.js"></script>
+    <script src="../js/js3.4.js"></script>
+    <script src="../js/js3.5.js"></script>
+
 </body>
 </html>
