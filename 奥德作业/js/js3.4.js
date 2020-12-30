@@ -1,6 +1,7 @@
 // 1. 获取标签
 var allLis = $('header').getElementsByTagName('li');
 var allDom = $('content').getElementsByClassName('dom');
+var allDomLis = $('content').getElementsByTagName('li');
 
 // 2. 遍历监听
 for (var i = 0; i < allLis.length; i++) {
@@ -12,9 +13,22 @@ for (var i = 0; i < allLis.length; i++) {
             allLis[j].className = '';
             allDom[j].style.display = 'none';
         }
-        // 2. 设置当前的li标签选中样式类
-        this.className = 'selected';
-        allDom[this.index].style.display = 'block';
+
+        // 2. 监听鼠标进入
+        allLis.onmouseover = function () {
+        	// 2.2 显示下拉菜单
+        	allDomLis.style.display = 'block';
+        };
+
+        // 3. 监听鼠标离开
+        allLis.onmouseout = function () {
+        	// 3.2 隐藏下拉菜单
+        	allDomLis.style.display = 'none';
+        }
+
+        // 4. 设置当前的li标签选中样式类
+        // this.className = 'selected';
+        // allDom[this.index].style.display = 'block';
     }
 }
 
