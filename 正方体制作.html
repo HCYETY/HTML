@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>正方体制作</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			perspective: 500px;
+		}
+		ul{
+			width: 200px;
+			height: 200px;
+			/* border: 1px solid #000;
+			box-sizing: border-box; */
+			margin: 100px auto;
+			position: relative;
+			transform: rotateY(0deg) rotateX(0deg);
+			transform-style: preserve-3d;
+			animation: sport 5s linear 0s infinite normal;
+		}
+		@keyframes sport{
+			from{
+				transform: rotateX(0deg);
+			}
+			to{
+				transform: rotateX(360deg);
+			}
+		}
+		ul li{
+			list-style: none;
+			width: 200px;
+			height: 200px;
+			font-size: 60px;
+			text-align: center;
+			line-height: 200px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		ul li:nth-child(1){
+			background-color: skyblue;
+			/* transform: translateX(-100px) rotateY(90deg); */
+			transform: rotateX(90deg) translateZ(100px) scale(2,1);
+		}
+		ul li:nth-child(2){
+			background-color: pink;
+			/* transform: translateX(100px) rotateY(90deg); */
+			transform: rotateX(180deg) translateZ(100px) scale(2,1);
+		}
+		ul li:nth-child(3){
+			background-color: green;
+			/* transform: translateY(-100px) rotateX(90deg); */
+			transform: rotateX(270deg) translateZ(100px) scale(2,1);
+		}
+		ul li:nth-child(4){
+			background-color: red;
+			/* transform: translateY(100px) rotateX(90deg); */
+			transform: rotateX(360deg) translateZ(100px) scale(2,1);
+		}
+		ul li:nth-child(5){
+			background-color: yellow;
+			/* transform: translateZ(-100px); */
+			transform: translateX(-200px) rotateY(90deg);
+		}
+		ul li:nth-child(6){
+			background-color: purple;
+			/* transform: translateZ(100px); */
+			transform: translateX(200px) rotateY(90deg);
+		}
+		ul li img{
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+</head>
+
+<body>
+	<ul>
+		<li><img src="奥德作业/images/taobao1.jpg" alt=""></li>
+		<li><img src="奥德作业/images/taobao2.jpg" alt=""></li>
+		<li><img src="奥德作业/images/taobao3.jpg" alt=""></li>
+		<li><img src="奥德作业/images/taobao5.jpg" alt=""></li>
+		<li><img src="奥德作业/images/taobao5.jpg" alt=""></li>
+		<li><img src="奥德作业/images/taobao5.jpg" alt=""></li>
+	</ul>
+</body>
+</html>
