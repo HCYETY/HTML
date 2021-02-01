@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.whole{
+    width: 1330px;
+    height: 2400px;
+    border: 1px solid black;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.cententLeft1 .cententRight1{
+    float: left;
+}
+.cententLeft2 .cententRight2{
+    float: left;
+}
+.cententRight1{
+    float: left;
+}
+.top img{
+    width: 1330px;
+}
+.bottom img{
+    width: 1330px;
+}
